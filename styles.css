@@ -1,0 +1,45 @@
+div {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.container {
+    border: 1px solid black;
+    display: grid;
+    overflow: auto;
+    resize: both;
+    grid-area: 2/2/7/7 ; 
+    display: grid;
+    grid-template: repeat(1, min(15%)) repeat(2, 1fr) / repeat(1, min(30%)) repeat(3, 1fr);
+    padding:5px;
+    gap:15px;
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.sidebar {
+    grid-area: 1/1/7/2;
+}
+
+.header {
+    grid-area: 1/2/1/5 ; 
+}
+
+.projects-items {
+    display: grid;
+    grid-area: 2/2/6/4;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    border-style: none;
+}
+
+.announcements {
+    grid-area: 2/4/2/5;
+}
+
+.trending {
+    grid-area: 3/4/5/6;
+}
